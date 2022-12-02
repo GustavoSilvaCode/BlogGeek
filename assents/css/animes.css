@@ -47,19 +47,7 @@ body{
     margin: auto;
 }
 
-.conteudo{
-    display: flex;
-    background-color: var(--cor-primaria);
-    border-radius: 30px;
-}
-
-.info{
-    flex: 1;
-    flex-direction: column;
-    padding: 20px;
-    font-size: 14px;
-    color: #fff;
-}
+/*Configurações do cabeçalho da página*/
 
 .cabecalho{
     max-width: 1026px;
@@ -89,6 +77,8 @@ body{
     object-position: -29px;
 }
 
+
+/*menu de navegação*/
 .menu ul{
     list-style-type: none;
     padding: 0;
@@ -122,7 +112,6 @@ body{
     left: 5;
     position: absolute;
     margin-top: -18px;
-    
 }
 
 .menu ul li:hover ul{
@@ -143,8 +132,9 @@ a{
     color: rgb(178, 214, 245);
     text-decoration: none;
 }
+/*fim do menu de navegação*/
 
-
+/*Área de contato*/
 .contato{
     display: flex;
     align-items: center;
@@ -177,14 +167,81 @@ a{
     object-fit: contain;
     object-position: center;
 }
+/*Fim do cabeçalho*/
 
 
-.links{
+/*Informações dos animes*/
+.conteudo{
+    display: flex;
+    background-color: var(--cor-primaria);
+    border-radius: 30px;
+}
+
+.info{
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.info-episodios-categoria{
+    display: flex; 
+    margin-top: 10px;
+}
+
+.info-episodios{
+    flex: 1;
+}
+
+.info-categoria{
+    flex: 2;
+    padding-left: 50px;
+}
+
+/*Design do número de episódios e das categorias*/
+.info-detalhes{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.info-efeito{
+    display: flex;
+    margin-right: 10px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info-efeito:hover{
+    font-style: italic;
+    cursor: default;
+}
+
+/*Fim do Design*/
+
+
+
+
+
+
+.anime-link{/*Link para assistir e imagem dos animes*/
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.anime-link img{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
 }
 
 h1{ 
@@ -204,24 +261,13 @@ h1{
     font-size: 16px;
 }
 
-footer{
+
+
+
+/*rodapé da página*/
+footer{  
     text-align: center;
     padding: 20px;
     border-top: 1px solid #666;
     margin-top: 20px;
 }
-
-img{
-    width: 500px;
-    height: 350px;
-    border-radius: 20px;
-}
-
-.titulo{
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    color: aliceblue;
-    border-bottom: 1px solid #666;
-}
-
