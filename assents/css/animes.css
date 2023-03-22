@@ -50,7 +50,6 @@ body{
 /*Configurações do cabeçalho da página*/
 
 .cabecalho{
-    max-width: 1026px;
     margin: auto;
     background-color: var(--cor-fundo);
     display: flex;
@@ -61,12 +60,6 @@ body{
     height: 45px;
     width: 100%;
     padding-top:6px;
-}
-
-.container.cabecalho{
-    position: fixed;
-    left: 124px;
-    
 }
 
 .cabecalho img{
@@ -270,4 +263,50 @@ footer{
     padding: 20px;
     border-top: 1px solid #666;
     margin-top: 20px;
+}
+
+
+
+
+
+@media (max-width:1000px){
+    .container .conteudo{
+        margin: 10px;
+    }
+    .container .conteudo  .info h2{
+        font-size: 24px;
+    }
+    .container .conteudo  .info p{
+        font-size: 14px;
+    }
+    .container .conteudo  .info .info-episodios-categoria .info-episodios .info-episodios-titulo h2{
+        font-size: 20px;
+    }
+    .container .conteudo  .info .info-episodios-categoria .info-categoria .info-categoria-titulo h2{
+        font-size: 20px;
+    }
+    .container .conteudo  .info .info-episodios-categoria .info-detalhes .info-efeito{
+        font-size: 14px;
+    }
+    .container .conteudo .anime-link img {
+        width: 450px;
+        height: 390px;
+        border-radius: 80px;
+    }
+}
+@media (max-width:500px){
+    .container .conteudo{
+        flex-direction: column;
+    }
+    .container .conteudo  .info p{
+        font-size: 16px;
+    }
+    .container .conteudo  .info .info-episodios-categoria .info-detalhes .info-efeito{
+        font-size: 16px;
+    }
+    .container .conteudo .anime-link img {
+        width: 300px;
+        height: 280px;
+        border-radius: 20px;
+    }
 }
